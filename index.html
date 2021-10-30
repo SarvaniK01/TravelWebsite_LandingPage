@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Goa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <img src="./images/menu-removebg-preview.png" alt="menu" class="menu-icon" onclick="togglemenu()">
+                <ul id="menuList">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="./explore.html">Travel</a></li>
+                    <li><a href="#">Transportation</a></li>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo">
+            <img src="./images/logo.png" alt="logo">
+        </div>
+        
+        <div class="title">
+            <h1>Goa<br>Diaries</h1>
+        </div>
+        <div class="button">
+            <a href="./explore.html" target="_blank" class="btn" >Let's Explore</a>
+        </div>
+    </header>
+    <script>
+
+        var menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px"
+
+        function togglemenu()
+        {
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "100%"
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>

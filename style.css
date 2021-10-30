@@ -1,0 +1,188 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Century Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    display: flexbox;
+    box-sizing: border-box;
+}
+
+header
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(./images/beach.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+nav ul 
+{
+    float: right;
+    list-style-type: none;
+    margin: 70px;
+}
+nav ul li
+{
+    display: inline-block;
+}
+.menu-icon
+{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav ul li a
+{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 20px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    margin: 20px 15px;
+    border-radius: 25px;
+    transition: all 0.7s;
+}
+nav ul li a:hover
+{
+    background-color: #ff7b5d;
+    color: white;
+    border-color:#ff7b5d ;
+}
+
+.logo img
+{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: block;
+    box-sizing: border-box;
+}
+.main
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    transition: all 0.1;
+}
+.title h1
+{
+    font-size: 100px;
+    color:rgba(255, 255, 255, 0.78);
+    text-align: center;
+}
+
+.button
+{
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn
+{
+    color: white;
+    text-decoration: none;
+    font-size: 35px; 
+    border: 2px solid rgba(255, 255, 255, 0.055); 
+    padding: 10px;
+    transition: all 0.5s;
+    border-radius: 20px;
+}
+
+.btn:hover
+{
+    color: white;
+    background-color: #ff7151;
+    border: white;
+}
+
+.video
+{
+    width: 100%;
+    height: 100%;
+    margin:0px 0px;
+    border: 10px solid yellow;
+    position: absolute;
+    background-size: cover;
+}
+.heading
+{
+    color: yellow;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+}
+
+@media only screen and (max-width:1030px)
+{
+    .navbar
+    {
+        width: 100%;
+        display: inline-block;
+        background-color:rgb(0, 0, 0);
+        align-items: center;
+        height: 52px;
+    }
+    nav ul  
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        top: 0%;
+        right: 0%;
+        z-index: 2;
+        margin-top:52px;
+        margin-right: 0px;
+    } 
+    nav ul li
+    {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-right: 30px;
+        padding: 5px 15px;
+        text-align: center;
+    }   
+    nav ul li a
+    {
+        font-size: 20px;
+        display: inline-flex;
+        padding: 5px 20px;
+        margin: 25px;
+    }
+    
+    .menu-icon
+    {
+        display: block;
+        width: 70px;
+        height: 50px;
+        float: right;
+        margin-top: 1px;
+        margin-right: 3px;
+    }
+    #menuList
+    {
+        overflow: hidden;
+        transition: 0.7s; 
+    }
+    .title
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
